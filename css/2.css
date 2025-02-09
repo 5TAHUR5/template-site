@@ -1,0 +1,242 @@
+*, *:after, *::before {
+  margin: 0;
+  padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+main .behindColor {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background: #1b1b1b;
+}
+
+main .infoWrapper {
+  
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 30px;
+  width: 1000px;
+}
+
+main .infoWrapper .cardInfo {
+  box-shadow: 0 0 2px 2px #565a5e;
+  background:  	#151515;
+  width: 100%;
+  padding: 20px;
+  border-radius: 0;  
+}
+
+main .infoWrapper .separatorCardInfoWrapper {
+  width: 100%;
+  position: relative;
+  margin: 25px 0 30px 0;
+}
+
+main .infoWrapper .separatorCardInfoWrapper .separatorCardInfo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  margin: 0;
+  text-align: center;
+  
+}
+
+main .infoWrapper .separatorCardInfoWrapper .separatorCardInfo span {
+  padding: 5px 10px;
+  border: 1px solid #757575;
+  color: #e1e3e5;
+  font-size: 0.9em;
+  font-weight: 500;
+  background-color: #1b1b1b;
+}
+
+main .infoWrapper .separatorCardInfoWrapper .separatorCardInfo::before {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 1px;
+  z-index: -1;
+  background: #757575;
+  content: "";
+}
+
+main .infoWrapper .separatorCardInfoWrapper .separatorCardInfo span::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #757575 transparent transparent transparent;
+  left: 50%;
+  transform: translateX(-50%) translateY(100%);
+}
+
+
+
+
+/* first block */
+
+main .infoWrapper .firstWrapper {
+  padding: 20px;
+  overflow:hidden;
+}
+
+main .infoWrapper .firstWrapper .firstBlockWrapper {
+  width: 100%;
+  padding: 30px 20px 30px 20px;
+  position: relative;
+  text-align: center;
+  border: solid 2px #757575;
+  display: inline-block;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+main .infoWrapper .firstWrapper .firstBlockWrapper::before {
+  background-color: #151515;
+  bottom: -10%;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: -10%;
+  transform: rotate(-5deg) skew(6deg);
+}
+
+main .infoWrapper .firstWrapper .firstBlockWrapper > *{
+  position: relative;
+  z-index: 1;
+}
+
+main .infoWrapper .firstWrapper .firstBlockWrapper span {
+  width: 100%;
+  font-weight: normal;
+  font-family: "Jonova", monospace;
+  font-size: 2em;
+  color: #e1e3e5;
+}
+
+
+/* profile */
+
+main .infoWrapper .profileWrapper {
+  display: flex;
+  justify-content: flex-start; 
+  padding: 20px;
+}
+
+main .infoWrapper .profileWrapper .aboutMe {
+  padding: 40px;
+  flex-grow: 1;
+}
+
+main .infoWrapper .profileWrapper .aboutMe .nameWrapper {
+  text-align: center;
+  font-weight: normal;
+  font-family: "Balhattan", "Zapus", monospace;
+  font-size: 2.5em;
+  color: #e1e3e5;
+}
+
+main .infoWrapper .profileWrapper .aboutMe .aboutTextWrapper {
+  margin-top: 15px;
+  font-weight: normal;
+  font-family: "Jonova", monospace;
+  font-size: 1.2em;
+  color: #e1e3e5;
+}
+
+main .infoWrapper .photoWrapper {
+  min-width: calc(831px * 0.3);
+  min-height: calc(1140px * 0.3);
+  width: calc(831px * 0.3);
+  height: calc(1140px * 0.3);
+}
+
+main .infoWrapper .photoWrapper #ustazPhoto {
+  /* border-radius: 33px; */
+  /* box-shadow: 0 0 3px 2px #e1e3e5; */
+  border: 3px solid #565a5e;
+  display: inline-block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+
+/* cources */
+
+main .infoWrapper .courcesWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 10px;
+}
+
+/* main .infoWrapper .courcesWrapper > :nth-child(2n) {
+  margin-right: 5px;
+} */
+
+main .infoWrapper .courcesWrapper .courceCardWrapper {
+  width: 50%;
+  
+}
+
+main .infoWrapper .courcesWrapper .courceCardWrapper {
+  width: 50%;
+  padding: 10px;
+}
+
+main .infoWrapper .courcesWrapper .courceCardWrapper .courceCard {
+  border: 1px solid #245346;
+  border-radius: 0;
+  padding: 10px;
+}
+
+main .infoWrapper .courcesWrapper .courceCardWrapper .courceCard .courceName {
+  font-weight: normal;
+  font-family: "Jonova", monospace;
+  font-size: 1.2em;
+  color: #220506;
+}
+
+main .infoWrapper .courcesWrapper .courceCardWrapper .courceCard .courceContent {
+  
+}
+
+main .infoWrapper .courcesWrapper .courceCardWrapper .courceCard .courceContent ul {
+  
+}
+
+main .infoWrapper .courcesWrapper .courceCardWrapper .courceCard .courceContent ul li {
+  list-style-type: none;
+}
+
+/* main .contactsWrapper {
+  
+} */
+
+
+

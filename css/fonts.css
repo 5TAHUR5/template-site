@@ -1,0 +1,64 @@
+@font-face {
+    font-family: Angst-0;
+    src: url('/assets/fonts/Angst-0.otf');
+}
+
+@font-face {
+font-family: Angst-50;
+src: url('/assets/fonts/Angst-50.otf');
+}
+
+@font-face {
+font-family: Angst-100;
+src: url('/assets/fonts/Angst-100.otf');
+}
+
+@font-face {
+font-family: AngstVF;
+src: url('/assets/fonts/AngstVF.ttf');
+}
+
+@font-face {
+font-family: Anticva;
+src: url('/assets/fonts/Anticva-Regular.otf');
+}
+
+@font-face {
+font-family: PlayfairDisplay;
+src: url('/assets/fonts/PlayfairDisplay-Regular.ttf');
+}
+  
+@font-face {
+    font-family: Balhattan;
+    src: url('/assets/fonts/Balhattan.ttf');
+}
+
+@font-face {
+    font-family: Jonova;
+    src: url('/assets/fonts/Jonova-Regular.ttf');
+}
+
+@font-face {
+    font-family: Zapus;
+    src: url('/assets/fonts/ZapusSans-Medium.ttf');
+}
+
+@font-face {
+    font-family: Terminalia;
+    src: url('/assets/fonts/Terminalia-Regular.ttf');
+}
+
+@font-face {
+    font-family: Shobhika;
+    src: url('/assets/fonts/shobhika_regular.otf');
+}
+
+@font-face {
+    font-family: Palqa;
+    src: url('/assets/fonts/Palqa-regular.otf');
+}
+
+@font-face {
+    font-family: Menlo;
+    src: url('/assets/fonts/Menlo-Regular.ttf');
+}
