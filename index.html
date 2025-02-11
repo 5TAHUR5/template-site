@@ -72,6 +72,36 @@
             font-family: Menlo;
             src: url('assets/fonts/Menlo-Regular.ttf');
         }
+        
+        @font-face {
+            font-family: DMSerifItalic;
+            src: url('assets/fonts/DMSerifText-Italic.ttf');
+        }
+
+        @font-face {
+            font-family: DMSerifRegular;
+            src: url('assets/fonts/DMSerifText-Regular.ttf');
+        }
+
+        @font-face {
+            font-family: JetBrainsMonoItalic;
+            src: url('assets/fonts/JetBrainsMono-Italic-VariableFont_wght.ttf');
+        }
+
+        @font-face {
+            font-family: JetBrainsMono;
+            src: url('assets/fonts/JetBrainsMono-VariableFont_wght.ttf');
+        }
+
+        @font-face {
+            font-family: RobotoMonoItalic;
+            src: url('assets/fonts/RobotoMono-Italic-VariableFont_wght.ttf');
+        }
+        
+        @font-face {
+            font-family: RobotoMono;
+            src: url('assets/fonts/RobotoMono-VariableFont_wght.ttf');
+        }
     </style>
     <link rel="stylesheet" href="css/2.css">
     <title>Gulbidin Farsi</title>
@@ -114,95 +144,85 @@
             <div class="courcesWrapper cardInfo">
                 <div class="courceCardWrapper">
                     <div class="courceCard">
-                        <div class="courceName">
-                            Test test
-                        </div>
+                        <div class="courceName">Арабский с нуля</div>
                         <div class="courceContent">
+                            <span>Содержание курса:</span>
                             <ul>
-                                <li>test content</li>
-                                <li>test content</li>
-                                <li>test content</li>
-                                <li>test content</li>
-                                <li>test content</li>
-                                <li>test content</li>
-                                <li>test content</li>
-                                <li>test content</li>
-                                <li>test content</li>
-                                <li>test content</li>
+                                <li><img src="assets/imgs/icons/talk1.svg" alt="Произношение букв"><span>Произношение букв</span></li>
+                                <li><img src="assets/imgs/icons/read3.svg" alt="Чтение"><span>Чтение</span></li>
+                                <li><img src="assets/imgs/icons/write-svgrepo-com.svg" alt="Правописание"><span>Правописание</span></li>
+                            </ul>
+                        </div>
+                        <div class="courseAdditional">
+                            <span>особенности курса</span>
+                            <ul>
+                                <li><b>–</b><span>Индивидуальное сопровождение</span></li>
+                                <li><b>–</b><span>Уроки проходят в закрытой группе телеграма</span></li>
+                                <li><b>–</b><span>Эфир уроков 2 раза в неделю (время определяется с началом курса)</span></li>
+                                <li><b>–</b><span>Обратная связь</span></li>
+                                <li><b>–</b><span>Личные созвоны в формате аудио для проверки домашнего задания и произношения букв</span></li>
+                                <li><b>–</b><span>Доступ к видео урокам</span></li>
+                                <li><b>–</b><span>Литература предоставляется</span></li>
+                            </ul>
+                        </div>
+                        <div class="courseDuration">Продолжительность курса: <span>Месяц</span></div>
+                        <a href="#contacts" class="courseCostWrapper">
+                            <div class="price">
+                                5500 ₽
+                            </div>
+                            <div class="payNote">* Есть возможнсть приобрести курс в рассрочку.</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="courceCardWrapper">
+                    <div class="courceCard">
+                        <div class="courceName">Чтение Кур’ана по правилам Таджвида</div>
+                        <div class="courseNote">Внимание: Этот курс подойдёт тем, кто уже умеет писать и читать!</div>
+                        <div class="courceContent">
+                            <span>Содержание курса:</span>
+                            <ul>
+                                <li><img src="assets/imgs/icons/symbol.svg" alt="Чтение и заучивание Кур’ана по правилам Таджвида"><span>Чтение и заучивание Кур’ана по правилам Таджвида</span></li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="courceCardWrapper">
                     <div class="courceCard">
-                        <div class="courceName">
-                            Test test
-                        </div>
+                        <div class="courceName">Разговорный арабский</div>
                         <div class="courceContent">
+                            <span>Содержание курса:</span>
                             <ul>
-                                <li>test content</li>
-                                <li>test content</li>
-                                <li>test content</li>
-                                <li>test content</li>
-                                <li>test content</li>
-                                <li>test content</li>
-                                <li>test content</li>
-                                <li>test content</li>
-                                <li>test content</li>
-                                <li>test content</li>
+                                <li><img src="assets/imgs/icons/talk1.svg" alt="Основа разговорного арабского"><span>Основа разговорного арабского</span></li>
+                                <li><img src="assets/imgs/icons/chain1.svg" alt="Правила сорфа"><span>Правила сорфа</span></li>
+                                <li><img src="assets/imgs/icons/scheme2.svg" alt="Правила нахв"><span>Правила нахв</span></li>
+                                <li><img src="assets/imgs/icons/communication2.svg" alt="Диалоги"><span>Диалоги</span></li>
                             </ul>
                         </div>
+                        
                     </div>
                 </div>
                 <div class="courceCardWrapper">
                     <div class="courceCard">
-                        <div class="courceName">
-                            Test test
-                        </div>
+                        <div class="courceName">Для знающих основу арабского языка</div>
                         <div class="courceContent">
+                            <span>Содержание курса:</span>
                             <ul>
-                                <li>test content</li>
-                                <li>test content</li>
-                                <li>test content</li>
-                                <li>test content</li>
-                                <li>test content</li>
-                                <li>test content</li>
-                                <li>test content</li>
-                                <li>test content</li>
-                                <li>test content</li>
-                                <li>test content</li>
+                                <li><img src="assets/imgs/icons/scheme1.svg" alt="Нахв и сорф по классическим книгам"><span>Нахв и сорф по классическим книгам</span></li>
+                                <li><img src="assets/imgs/icons/translation.svg" alt="Перевод текстов"><span>Перевод текстов</span></li>
+                                <li><img src="assets/imgs/icons/book-write2.svg" alt="Сочинения"><span>Сочинения</span></li>
+                                <li><img src="assets/imgs/icons/stack-of-books2.svg" alt="Разбор книг для понимания"><span>Разбор книг для понимания</span></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="courceCardWrapper">
-                    <div class="courceCard">
-                        <div class="courceName">
-                            Test test
-                        </div>
-                        <div class="courceContent">
-                            <ul>
-                                <li>test content</li>
-                                <li>test content</li>
-                                <li>test content</li>
-                                <li>test content</li>
-                                <li>test content</li>
-                                <li>test content</li>
-                                <li>test content</li>
-                                <li>test content</li>
-                                <li>test content</li>
-                                <li>test content</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+
             </div>
             <div class="separatorCardInfoWrapper">
                 <div class="separatorCardInfo">
                     <span>Как со мной связаться?</span>
                 </div>
             </div>
-            <div class="contactsWrapper cardInfo">
+            <div id="contacts" class="contactsWrapper cardInfo">
 
             </div>
         </div>
