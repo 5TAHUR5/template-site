@@ -31,6 +31,12 @@ main .infoWrapper {
   width: 1000px;
 }
 
+@media screen and (max-width: 1010px) {
+  main .infoWrapper {
+    width: 780px;
+  }
+}
+
 main .infoWrapper .cardInfo:last-of-type { 
   margin-bottom: 40px;
 }
@@ -65,7 +71,7 @@ main .infoWrapper .separatorCardInfoWrapper .separatorCardInfo span {
   padding: 5px 10px;
   border: 1px solid #757575;
   color: #e1e3e5;
-  font-size: 0.9em;
+  font-size: 0.76vw;
   font-weight: 500;
   background-color: #1b1b1b;
 }
@@ -137,7 +143,7 @@ main .infoWrapper .firstWrapper .firstBlockWrapper span {
   width: 100%;
   font-weight: normal;
   font-family: "Jonova", monospace;
-  font-size: 2em;
+  font-size: 1.8vw;
   color: #e1e3e5;
 }
 
@@ -159,7 +165,7 @@ main .infoWrapper .profileWrapper .aboutMe .nameWrapper {
   text-align: center;
   font-weight: normal;
   font-family: "Balhattan", "Zapus", monospace;
-  font-size: 2.5em;
+  font-size: 2vw;
   color: #e1e3e5;
 }
 
@@ -167,7 +173,7 @@ main .infoWrapper .profileWrapper .aboutMe .aboutTextWrapper {
   margin-top: 15px;
   font-weight: normal;
   font-family: "Jonova", monospace;
-  font-size: 1.2em;
+  font-size: 1vw;
   color: #e1e3e5;
 }
 
@@ -254,7 +260,7 @@ main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseNote {
 main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseName {
   font-weight: normal;
   font-family: "Jonova", monospace;
-  font-size: 1.2em;
+  font-size: 1.1vw;
   color: #e1e3e5;
   text-align: center;
 }
@@ -269,7 +275,7 @@ main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseContent 
 main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseContent span {
   font-weight: normal;
   font-family: "Jonova", monospace;
-  font-size: 1.15em;
+  font-size: 1.1vw;
   color: #e1e3e5;
   margin-left: 3px;
   margin-bottom: 8px;
@@ -299,7 +305,7 @@ main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseContent 
 
 main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseContent ul li span {
   font-family: "Jonova";
-  font-size: 1.1em;
+  font-size: 1vw;
   margin-left: 0;
   margin-bottom: 0;
 }
@@ -316,7 +322,7 @@ main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseAddition
   color: #e1e3e5;
   text-transform: uppercase;
   font-family: "Jonova";
-  font-size: 1.3em;
+  font-size: 1.15vw;
 
 }
 
@@ -335,7 +341,7 @@ main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseAddition
 
 main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseAdditional ul li b {
   position: relative;
-  font-size: 1em;
+  font-size: 0.9vw;
   /* margin-top: -4px; */
   color: #151515;
   text-decoration: dashed;
@@ -345,7 +351,7 @@ main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseAddition
   content: "";
   position: absolute;
   left: 0;
-  top: 9px;
+  top: 0.5vw;
   width: 8px;
   display: block;
   border-top: 2px solid #e1e3e5;
@@ -358,7 +364,7 @@ main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseAddition
   text-align: start;
   text-transform: none;
   font-family: "Palqa";
-  font-size: 1.2em;
+  font-size: 1.1vw;
 }
 
 main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseDuration {
@@ -368,13 +374,13 @@ main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseDuration
   justify-content: space-between;
   align-items: flex-end;
   color: #e1e3e5;
-  font-size: 1.1em;
+  font-size: 1vw;
   font-family: "Menlo";
 }
 
 main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseDuration span {
   text-transform: uppercase;
-  font-size: 1.3em;
+  font-size: 1.2vw;
   font-family: "Jonova";
 }
 
