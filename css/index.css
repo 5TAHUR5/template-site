@@ -206,10 +206,10 @@ main .infoWrapper .photoWrapper #ustazPhoto {
   display: inline-block;
   max-width: 100%;
   max-height: 100%;
-  min-width: calc(831px * 0.3);
-  min-height: calc(1140px * 0.3);
-  width: calc(831px * 0.3);
-  height: calc(1140px * 0.3);
+  /* min-width: calc(831px * 0.3);
+  min-height: calc(1140px * 0.3); */
+  width: calc(960px * 0.3);
+  height: calc(1280px * 0.3);
 }
 
 @media screen and (max-width: 1010px) and (min-width: 800px) {
@@ -232,31 +232,39 @@ main .infoWrapper .photoWrapper #ustazPhoto {
   } */
   body main .infoWrapper .profileWrapper .aboutMe {
     /* order: -1; */
-    padding: 10px;
+    padding: 5px;
   }
 
   body main .infoWrapper .profileWrapper {
-    flex-direction: column;
-    display: inline-block;
-    vertical-align: middle;
+    /* flex-direction: column; */
+    display: block;
+    /* vertical-align: middle; */
   }
 
-  /* body main .infoWrapper .profileWrapper .aboutMe .nameWrapper {
+  body main .infoWrapper .profileWrapper .aboutMe .nameWrapper {
     font-size: 1.7em;
-    display: none;
-  } */
+  }
   
 
   body main .infoWrapper .profileWrapper .aboutMe .aboutTextWrapper {
     font-size: 0.9em;
+    margin-top: 10px;
   }
 
 
   body main .infoWrapper .profileWrapper .photoWrapper {
-    align-items: start;
-    position: static;
+    /* align-items: start;
+    position: static; */
+    display: block;
+    height: auto;
+    float: right;
     right: 0;
     top: 0;
+  }
+
+  body main .infoWrapper .profileWrapper .photoWrapper #ustazPhoto {
+    width: calc(960px * 0.15);
+    height: calc(1280px * 0.15);
   }
 
   /* body main .infoWrapper .profileWrapper .photoWrapper .hideNameWrapper {
