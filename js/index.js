@@ -42,7 +42,7 @@ function limitScroll(event) {
 // window.addEventListener('wheel', limitScroll, { passive: false });
 window.addEventListener('touchstart', function(event) {
     isScrolling = true; // Устанавливаем флаг при начале касания
-    cardScrolling = true
+    cardScrolling = false
 });
 
 window.addEventListener('touchmove', function(event) {
