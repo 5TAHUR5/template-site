@@ -308,7 +308,7 @@ main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard {
   flex-direction: column;
   justify-content: space-between;
   gap: 15px;
-  transition: all 3s;
+  transition: all 1.5s;
   overflow: hidden;
 }
 
@@ -499,16 +499,16 @@ main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseCostWrap
     z-index: 10;
   } */
 
-  main .infoWrapper .coursesWrapper .courseCardWrapper .oddCard {
-    right: 100%;
+  main .infoWrapper .coursesWrapper .courseCardWrapper .evenCard {
+    transform: translateX(100%);
   }
 
-  main .infoWrapper .coursesWrapper .courseCardWrapper .evenCard {
-    right: -100%;
+  main .infoWrapper .coursesWrapper .courseCardWrapper .oddCard {
+    transform: translateX(-100%);
   }
 
   body main .infoWrapper .coursesWrapper .courseCardWrapper .visible {
-    right: 0;
+    transform: translateX(0);
   }
 
   /* body main .infoWrapper .coursesWrapper .courseCardWrapper::before {
