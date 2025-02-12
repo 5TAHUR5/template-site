@@ -154,9 +154,13 @@ main .infoWrapper .firstWrapper .firstBlockWrapper span {
 }
 
 
+@media screen and (max-width: 650px) {
+  main .infoWrapper .firstWrapper .firstBlockWrapper span {
+    font-size: 1.5em;
+  }
+}
+
 /* profile */
-
-
 
 main .infoWrapper .profileWrapper {
   display: flex;
@@ -603,3 +607,19 @@ main .contactsWrapper #contactTelegram:hover svg g path {
   fill: #151515;
 }
 
+@media screen and (max-width: 650px) {
+
+  body main .contactsWrapper a span {
+    font-size: 1em;
+  }
+
+  body main .contactsWrapper a svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  body main .contactsWrapper a:hover svg {
+    scale: 1.3;
+  }
+
+}
