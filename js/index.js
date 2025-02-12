@@ -8,15 +8,12 @@ window.addEventListener('scroll', function() {
         const rect = card.getBoundingClientRect();
 
         // Проверяем, виден ли элемент в области просмотра
-        if (!card.className.includes("visible") && rect.top*1.8 <= window.innerHeight && rect.bottom >= 0) {
-            // Добавляем класс для анимации
-            // card.scrollIntoView({});
+        if (!card.className.includes("visible") && (rect.top + ((this.window.screen.height/100)*20)) <= window.innerHeight && rect.bottom >= 0) {
             card.classList.add('visible');
             this.window.scrollTo({
-                top: rect.top + window.scrollY - (rect.height/10),
+                top: rect.top + window.scrollY - ((this.window.screen.height/100)*3),
                 behavior: "smooth"
             })
-            // this.window.scroll(0, rect.top)
         }
     });
 });

@@ -415,7 +415,7 @@ main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseAddition
   border-top: 2px solid #e1e3e5;
 }
 
-main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseAdditional ul li span{
+main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseAdditional ul li span {
   list-style: inside;
   list-style-type: circle;
   margin-top: 0;
@@ -468,6 +468,109 @@ main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseCostWrap
   
 }
 
+@media screen and (max-width: 550px) {
+
+  /* body main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseName {
+    font-size: 1.1em;
+  } */
+
+  /* body main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseContent {
+    gap: 4px;
+  }
+
+  body main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseContent span {
+    font-size: 1em;
+  }
+
+  body main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseContent ul li {
+    gap: 4px;
+  }
+
+  body main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseContent ul li img {
+    height: 22px;
+    width: 22px;
+  }
+
+  body main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseContent ul li span {
+    font-size: 1em;
+  }
+
+  body main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseAdditional {
+    margin-top: 10px;
+  }
+
+  body main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseAdditional span {
+    font-size: 1.15em;
+  }
+
+  body main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseAdditional ul li{
+    margin-top: 4px;
+    gap: 4px;
+  }
+
+  body main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseAdditional ul li b {
+    font-size: 0.85em;
+  }
+
+  body main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseAdditional ul li b::before {
+    top: 9px;
+    width: 7px;
+    border-top: 1.5px solid #e1e3e5;
+  }
+
+  body main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseAdditional ul li span {
+    font-size: 1.1em;
+  }
+
+  body main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseDuration {
+    margin-top: 8px;
+    padding: 0;
+    font-size: 1em;
+  }
+
+  body main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseDuration span {
+    font-size: 1.2em;
+  }
+
+  body main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseCostWrapper {
+    padding: 5px;
+  }
+
+  body main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseCostWrapper .price {
+    font-size: 1.5em;
+    font-weight: 500;
+  } */
+
+  /* body main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseCostWrapper .payNote {
+    font-size: 0.7em;
+  } */
+
+}
+
+@media screen and (max-width: 450px) {
+
+  body main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseDuration {
+    margin-top: 5px;
+    padding: 0;
+    font-size: 0.85em;
+  }
+
+  body main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseDuration span {
+    font-size: 1.05em;
+  }
+
+  body main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseCostWrapper .price {
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+
+  body main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseCostWrapper .payNote {
+    font-size: 0.75em;
+  }
+
+}
+
+
 @media screen and (max-width: 800px) {
   body main .infoWrapper .coursesWrapper .courseCardWrapper {
     width: 100%;
@@ -475,17 +578,6 @@ main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseCostWrap
 
   body main .infoWrapper .coursesWrapper .courseCardWrapper {
     overflow: hidden;
-  }
-
-  /* body main .infoWrapper .coursesWrapper .courseCardWrapper::after {
-    content: "";
-    position: absolute;
-    height: calc(100% - 20px);
-    width: 20px;
-    top: 10px;
-    left: -10px;
-    background: #fff;
-    z-index: 10;
   }
 
   body main .infoWrapper .coursesWrapper .courseCardWrapper::before {
@@ -497,7 +589,18 @@ main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseCostWrap
     left: -10px;
     background: #151515;
     z-index: 10;
-  } */
+  }
+
+  body main .infoWrapper .coursesWrapper .courseCardWrapper::after {
+    content: "";
+    position: absolute;
+    height: calc(100% - 20px);
+    width: 20px;
+    top: 10px;
+    right: -10px;
+    background: #151515;
+    z-index: 10;
+  }
 
   main .infoWrapper .coursesWrapper .courseCardWrapper .evenCard {
     transform: translateX(100%);
@@ -511,17 +614,49 @@ main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseCostWrap
     transform: translateX(0);
   }
 
-  /* body main .infoWrapper .coursesWrapper .courseCardWrapper::before {
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-110%);
+    }
+    to {
+      transform: translateX(110%);
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      transform: translateX(110%);
+    }
+    to {
+      transform: translateX(-110%);
+    }
+  }
+
+  main .infoWrapper .coursesWrapper .courseCardWrapper .oddCard.visible::before {
+    transform: translate(110%);
+    animation: slideInRight 0.5s ease forwards;
+    animation-delay: 1.5s;
+  }
+
+  main .infoWrapper .coursesWrapper .courseCardWrapper .evenCard.visible::before {
+    transform: translate(-110%);
+    animation: slideInLeft 0.5s ease forwards;
+    animation-delay: 1.5s;
+  }
+
+  main .infoWrapper .coursesWrapper .courseCardWrapper .visible::before {
     content: "";
-    display: block;
     position: absolute;
     top: 0;
-    left: -10px;
+    width: 100%;
     height: 100%;
-    width: 10px;
-    background: #fff;
-  } */
-
+    background: linear-gradient(
+      120deg,
+      transparent,
+      rgba(117, 117, 117, 0.4),
+      transparent
+    );
+  }
 
 }
 
