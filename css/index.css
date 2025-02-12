@@ -578,6 +578,7 @@ main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseCostWrap
 
   body main .infoWrapper .coursesWrapper .courseCardWrapper {
     overflow: hidden;
+
   }
 
   body main .infoWrapper .coursesWrapper .courseCardWrapper::before {
@@ -661,6 +662,10 @@ main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard .courseCostWrap
 }
 
 @media screen and (min-width: 801px) {
+
+  body main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard {
+    transition: all 0.3s;
+  }
 
   main .infoWrapper .coursesWrapper .courseCardWrapper .courseCard::before {
     content: "";
