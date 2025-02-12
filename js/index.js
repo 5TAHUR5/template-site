@@ -1,7 +1,5 @@
 const courseCards = document.querySelectorAll('.courseCard');
 
-
-
 window.addEventListener('scroll', function() {
 
     courseCards.forEach(card => {
@@ -16,4 +14,30 @@ window.addEventListener('scroll', function() {
             })
         }
     });
+});
+
+
+let isScrolling;
+
+window.addEventListener('wheel', function(event) {
+    // Останавливаем событие прокрутки
+    event.preventDefault();
+}, { passive: false });
+
+window.addEventListener('touchstart', function(event) {
+    // Очищаем таймер перед началом касания
+    clearTimeout(isScrolling);
+});
+
+window.addEventListener('touchmove', function(event) {
+    // Останавливаем событие прокрутки при движении пальца
+    event.preventDefault();
+}, { passive: false });
+
+window.addEventListener('touchend', function(event) {
+    // Устанавливаем таймер для определения окончания прокрутки
+    isScrolling = setTimeout(function() {
+        // Здесь можно добавить логику, когда скроллинг завершен
+        console.log('Пользователь закончил прокрутку');
+    }, 66); // 15 кадров в секунду
 });
