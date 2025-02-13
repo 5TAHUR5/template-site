@@ -8,10 +8,10 @@ window.addEventListener('scroll', function() {
         const rect = card.getBoundingClientRect();
 
         // Проверяем, виден ли элемент в области просмотра
-        if (!card.className.includes("visible") && (rect.top + ((rect.height/100)*3)) <= window.innerHeight && rect.bottom >= 0) {
+        if (!card.className.includes("visible") && (rect.top + ((rect.height/100)*0)) <= window.innerHeight && rect.bottom >= 0) {
             card.classList.add('visible');
             this.window.scrollTo({
-                top: rect.top + window.scrollY - ((rect.height/100)*5),
+                top: rect.bottom + window.scrollY - ((rect.height/100)*5),
                 behavior: "smooth"
             })
         }
