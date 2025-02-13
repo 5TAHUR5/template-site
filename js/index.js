@@ -11,7 +11,7 @@ window.addEventListener('scroll', function() {
         if (!card.className.includes("visible") && (rect.top + ((rect.height/100)*0)) <= window.innerHeight && rect.bottom >= 0) {
             card.classList.add('visible');
             this.window.scrollTo({
-                top: rect.bottom - rect.height + screen.height + window.scrollY, //- ((rect.height/100)*5),
+                top: rect.top - rect.height + screen.height + window.scrollY, //- ((rect.height/100)*5),
                 behavior: "smooth"
             })
         }
